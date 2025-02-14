@@ -116,7 +116,7 @@ class BoxTest {
     Assertions.assertEquals(0, orangeBox2.calculateWeight());
 
     fruitBox1.refill(fruitBox2);
-    Assertions.assertEquals(3 * appleWeight + 3 * orangeWeight, fruitBox2.calculateWeight());
+    Assertions.assertEquals(3 * appleWeight + 3 * orangeWeight, appleBox2.calculateWeight());
     Assertions.assertEquals(0, fruitBox1.calculateWeight());
 
     fruitBox2.refill(fruitBox1);
