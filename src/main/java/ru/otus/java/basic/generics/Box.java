@@ -11,7 +11,7 @@ public class Box<T extends Fruit> {
     fruits.add(fruit);
   }
 
-  public void add(Fruit fruit, int count) {
+  public void add(T fruit, int count) {
     for (int i = 0; i < count; i++) {
       fruits.add(fruit);
     }

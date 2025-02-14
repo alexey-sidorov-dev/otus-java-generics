@@ -17,22 +17,14 @@ class BoxTest {
     Assertions.assertEquals(orangeWeight, orange.getWeight());
 
     Box<Fruit> fruitBox = new Box<>();
-    Assertions.assertDoesNotThrow(() -> {
-      fruitBox.add(apple);
-    });
-    Assertions.assertDoesNotThrow(() -> {
-      fruitBox.add(orange);
-    });
+    Assertions.assertDoesNotThrow(() -> fruitBox.add(apple));
+    Assertions.assertDoesNotThrow(() -> fruitBox.add(orange));
 
     Box<Apple> appleBox = new Box<>();
-    Assertions.assertDoesNotThrow(() -> {
-      appleBox.add(apple);
-    });
+    Assertions.assertDoesNotThrow(() -> appleBox.add(apple));
 
     Box<Orange> orangeBox = new Box<>();
-    Assertions.assertDoesNotThrow(() -> {
-      orangeBox.add(orange);
-    });
+    Assertions.assertDoesNotThrow(() -> orangeBox.add(orange));
   }
 
   @Test
